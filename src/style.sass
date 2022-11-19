@@ -11,28 +11,35 @@ body
     width: 100%
     height: 100%
     .calcBody
-        width: 30rem
-        height: 54rem
-        border-radius: 12px
-        background: #e0e0e0
-        box-shadow: 41px 41px 82px #bebebe,-41px -41px 82px #ffffff
+        background-color: #525559
         padding: .5rem
+        border-radius: 10px
         .outPut
             height: 10%
             input
                 width: 100%
                 height: 100%
                 font-size: 2rem
+                color: white
         .buttons
             width: 100%
             height: 10%
             div
                 width: 24%
+                height: 100%
                 button
                     width: 100%
                     height: 100%
-                    font-size: 3rem
-                    border-radius: 10px
+                    font-size: 5rem
+                    border-radius: 5px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background-color: #517786
+                    border-color: #9BE289
+                    i
+                        color: black
+                        font-family: fontawesome, sans-serif
         .panal
             height: 80%
             .numbers
@@ -48,22 +55,36 @@ body
                             width: 100%
                             height: 100%
                             font-size: 3rem
-                            border-radius: 12px
-                            // background: #e0e0e0
-                            box-shadow: 28px 28px 56px #bebebe,-28px -28px 56px #ffffff
+                            background-color: #409DA0
+                            &[value="."]
+                                font-size: 10px
                             &:hover
                                 color: black
                                 border-radius: 8px
                                 background: linear-gradient(145deg, #cacaca, #f0f0f0)
-                                box-shadow: 28px 28px 56px #bebebe,-28px -28px 56px #ffffff
+
             .equal
                 width: 13%
-                height: 99%
+                padding-top: .5rem
+                display: flex
+                flex-direction: column
+                justify-content: space-evenly
+                gap: 1rem
+                button
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border: none
+                    border-collapse: none
                 .result
+                    background-color: #E29E21
+                    text-align: left
                     width: 100%
-                    height: 80%
+                    height: 15rem
                     font-size: 3rem
+                    flex-grow: 3
                 .clear
                     width: 100%
-                    height: 20%
+                    height: 7rem
                     font-size: 3rem
+                    background-color: #B791A3

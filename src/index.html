@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./images/calculator-solid.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1bf4a50a48.js" crossorigin="anonymous"></script>
     <title>Calculator</title>
 </head>
 
@@ -14,14 +15,13 @@
     <div class="wrapper d-flex justify-content-center align-items-center">
         <div class="calcBody d-flex flex-column gap-3">
             <div class="outPut d-flex flex-column gap-1">
-
                 <input type="text" id="result" value="0" disabled>
             </div>
             <div class="buttons d-flex gap-2 justify-content-center">
-                <div><button class="functionButton plus" value="+">+</button> </div>
-                <div><button class="functionButton minus" value="-">-</button> </div>
-                <div><button class="functionButton multi" value="*">*</button> </div>
-                <div><button class="functionButton divid" value="/">/</button> </div>
+                <div><button class="functionButton plus" value="+"><i class="fa-solid fa-plus"></i></button> </div>
+                <div><button class="functionButton minus" value="-"><i class="fa-solid fa-minus"></i></button> </div>
+                <div><button class="functionButton multi" value="*"><i class="fa-solid fa-xmark"></i></button> </div>
+                <div><button class="functionButton divid" value="/"><i class="fa-solid fa-divide"></i></button> </div>
             </div>
             <div class="panal d-flex gap-2">
                 <div class="numbers">
@@ -40,9 +40,18 @@
                         <div><button class="numericButton btn btn-dark two" value="2">2</button></div>
                         <div><button class="numericButton btn btn-dark three" value="3">3</button></div>
                     </div>
+                    <div class="box d-flex">
+                        <div><button class="numericButton btn btn-dark " value="#"><i
+                                    class="fa-solid fa-hashtag"></i></button></div>
+                        <div><button class="numericButton btn btn-dark " value="0">0</button></div>
+                        <div><button class="numericButton btn btn-dark " value="."><i
+                                    class="fa-solid fa-circle"></i></button></div>
+                    </div>
                 </div>
-                <div class="equal"><button class="functionButton result btn btn-danger" value="=">=</button>
-                    <button class="functionButton clear" value="C">C</button></div>
+                <div class="equal">
+                    <button class="functionButton result btn" value="="><i class="fa-solid fa-equals"></i></button>
+                    <button class="functionButton clear" value="C"><i class="fa-solid fa-c"></i></button>
+                </div>
             </div>
         </div>
     </div>

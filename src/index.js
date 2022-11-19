@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const result = document.querySelector("#result");
 
   const numericButtons = document.querySelectorAll(".numericButton");
-
+  
   const numericButtonPressed = function () {
     const numberPressed = event.target.value;
 
@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   const functionButtons = document.querySelectorAll(".functionButton");
 
-  const functionButtonPressed = function () {
+  const functionButtonPressed = function (event) {
     const functionPressed = event.target.value;
 
     switch (functionPressed) {
