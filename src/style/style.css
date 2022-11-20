@@ -10950,43 +10950,42 @@ body {
 .wrapper {
   width: 100%;
   height: 100%;
+  background-color: darkgray;
 }
 .wrapper .calcBody {
   background-color: #525559;
   padding: 0.5rem;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .wrapper .calcBody .outPut {
-  height: 10%;
+  height: 60px;
 }
 .wrapper .calcBody .outPut input {
   width: 100%;
   height: 100%;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
+  background-color: black;
+  font-weight: 700;
 }
 .wrapper .calcBody .buttons {
   width: 100%;
   height: 10%;
 }
 .wrapper .calcBody .buttons div {
-  width: 24%;
+  width: 30%;
   height: 100%;
 }
 .wrapper .calcBody .buttons div button {
   width: 100%;
-  height: 100%;
-  font-size: 5rem;
-  border-radius: 5px;
+  height: 80%;
+  font-size: 3rem;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #517786;
   border-color: #9BE289;
-}
-.wrapper .calcBody .buttons div button i {
-  color: black;
-  font-family: fontawesome, sans-serif;
 }
 .wrapper .calcBody .panal {
   height: 80%;
