@@ -37,6 +37,9 @@ window.addEventListener("DOMContentLoaded", function () {
           case "*":
             result.value = valueA * parseFloat(result.value);
             break;
+            case "%":
+              result.value = valueA % parseFloat(result.value);
+              break;
         }
         break;
       case "C":
